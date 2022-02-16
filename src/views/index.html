@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="./" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Bryan Herrera | PORTAFOLIO" />
+    <title>Bryan Herrera | PORTAFOLIO</title>
+    <meta name="keywords"
+        content="Portafolio, curriculum, Bryan, Herrera, Bryan Herrera, Mi portafolio, Desarrollador, web" />
+    <meta name="author" content="bryherrera55@gmail.com" />
+    <meta name="google-site-verification" content="VFIoBukbxlXNN3cDw3_aaIGXvk0LbfAB1O9l7Ii6Wzg" />
+    <link rel="canonical" href="https://bryan-herrera.netlify.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bryan-herrera.netlify.app/" />
+    <meta property="og:title" content="Bryan Herrera | PORTAFOLIO" />
+    <meta property="og:description"
+        content="Pagina web diseñada para que tu conozcas un poco mas sobre mis habilidades." />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Bryan-Herrera-DEV/Bryan-Herrera-Portfolio/3396725e6593a766f88325ee42fe3a05401acc91/images/profile.jpg" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <meta name="theme-color" content="#0a192f" />
+
+    <!-- Estilos -->
+    <!-- <link rel="stylesheet" href="./assets/css/style.min.css" /> -->
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+</head>
+
+<body id="boudy">
+    <header class="header">
+        <div class="nav">
+            <div class="logo">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+                    <title>Logo</title>
+                    <g transform="translate(-8.000000, -2.000000)">
+                        <g transform="translate(11.000000, 5.000000)">
+                            <path
+                                d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z"
+                                fill="currentColor"></path>
+                            <polygon id="Shape" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+                                stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="list">
+                <ol class="navLinks">
+                    <li class="yy"><a href="#about">Sobre Mi</a></li>
+                    <li class="yy"><a href="#jobs">experiencia</a></li>
+                    <li class="yy"><a href="#projects">Proyectos</a></li>
+                    <li class="yy"><a href="#contact">Contacto</a></li>
+                </ol>
+                <div>
+                    <a href="CV.pdf" target="_blank" rel="noreferrer noopener" class="yy cv">Curriculum</a>
+                </div>
+            </div>
+
+
+            <div class="menu__StyledMenu-sdn9y6-0 dAwNpJ">
+                <!-- 
+                    Cuando se haga click en el boton de menu, se ejecutara la funcion toggleMenu
+                    eso acmbiara de: eCxtrN -> eVRjg, dKogfI -> dSbVSd
+                    añadir clase blur a la pagina para que no se pueda scrollear
+                -->
+                <div>
+                    <button aria-label="Menu" id="but_nav" class="menu__StyledHamburgerButton-sdn9y6-1 eCxtrN">
+                        <div class="ham-box">
+                            <div class="ham-box-inner"></div>
+                        </div>
+                    </button>
+                    <aside aria-hidden="true" id="aside_de_nav" tabindex="-1"
+                        class="menu__StyledSidebar-sdn9y6-2 dKogfI">
+                        <nav>
+                            <ol>
+                                <li class="yy"><a href="#about">Sobre Mi</a></li>
+                                <li class="yy"><a href="#jobs">experiencia</a></li>
+                                <li class="yy"><a href="#projects">Proyectos</a></li>
+                                <li class="yy"><a href="#contact">Contacto</a></li>
+                            </ol><a href="CV.pdf" target="_blank" rel="noreferrer noopener"
+                                class="resume-link">Curriculum</a>
+                        </nav>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Barra lateral izquierda-->
+    <div orientation="left" class="side">
+        <ul class="fade">
+            <li>
+                <a href="https://github.com/Bryan-Herrera-DEV" aria-label="GitHub" target="_blank"
+                    rel="noreferrer noopener" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_bryan_herrera_dev_/" aria-label="Instagram" target="_blank"
+                    rel="noreferrer noopener" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-instagram">
+                        <title>Instagram</title>
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/BryanHe52482198" aria-label="Twitter" target="_blank"
+                    rel="noreferrer noopener" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-twitter">
+                        <title>Twitter</title>
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                        </path>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/bryan-herrera-dev/" aria-label="Linkedin" target="_blank"
+                    rel="noreferrer noopener" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-linkedin">
+                        <title>LinkedIn</title>
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg></a>
+            </li>
+            <li>
+                <a href="https://codepen.io/Bryanlolry" aria-label="Codepen" target="_blank" rel="noreferrer noopener"
+                    rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-codepen">
+                        <title>CodePen</title>
+                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                        <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                        <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                        <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                        <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                    </svg></a>
+            </li>
+        </ul>
+    </div>
+    <!-- barra lateral derecha -->
+    <div orientation="right" class="rightBar">
+        <div class="fade">
+            <a href="mailto:bryherrera55@gmail.com">bryherrera55@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="content">
+        <main class="main">
+            <section class="sobreMi">
+                <div class="pOne">
+                    <h1>Hola, mi nombre es</h1>
+                </div>
+                <div class="pDos">
+                    <h2>Bryan Herrera</h2>
+                </div>
+                <div class="pTres">
+                    <h3>Construyo cosas increibles para la web</h3>
+                </div>
+                <div class="pCuatro"></div>
+                <div class="pCinco">
+                    <a class="email-link" href="#" target="_blank" rel="noreferrer noopener" rel="noreferrer">Conoce mas
+                        sobre mi</a>
+                </div>
+            </section>
+
+            <section id="about" class="about" data-sr-id="0" style="visibility: visible">
+                <h2 class="numbered-heading">Sobre Mi</h2>
+                <div class="inner">
+                    <div class="pD gs_reveal desdeIzquierda" class="">
+                        <div>
+                            <p>
+                                Soy un desarrollador web que se especializa en la construcción (y
+                                ocasionalmente en el diseño) de experiencias digitales excepcionales
+                                dentro de la web. Actualmente, me centro en la construcción accesible,
+                                paginas centradas en la experiencia de usuario y <b>BackEnd</b> escalables y
+                                mantenibles..
+                            </p>
+                            <!-- <p>
+                                Actualmente tengo un
+                                <a href="https://www.newline.co/courses/build-a-spotify-connected-app"
+                                    rel="noopener noreferrer" target="_blank" rel="noreferrer noopener">sitio</a>
+                                web estructurado en Angular con el que ayudo a la comunidad explicando y
+                                traduciendo APIs que solo se encuentran en inglés de manera sencilla.
+                            </p> -->
+                            <p>Estas son las tecnologias con las que he trabajado ultimamente</p>
+                        </div>
+                        <ul class="skills-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>TypeScript</li>
+                            <li>Angular</li>
+                            <li>Express.js</li>
+                            <li>Node.js</li>
+                            <li>Gsap</li>
+                        </ul>
+                    </div>
+                    <div class="image gs_reveal desdeDerecha">
+                        <div class="wrapper">
+                            <div class="img">
+                                <div style="max-width: 500px; display: block">
+                                    <img alt="" role="presentation" aria-hidden="true"
+                                        src="data:image/svg+xml;charset=utf-8,%3Csvg height='500' width='500' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                                        style="
+												max-width: 100%;
+												display: block;
+												position: static;
+												border-radius: 10px;
+											" />
+                                </div>
+                                <div aria-hidden="true" data-placeholder-image="" style="
+											opacity: 0;
+											transition: opacity 500ms linear 0s;
+											background-color: rgb(232, 232, 232);
+											position: absolute;
+											inset: 0px;
+											object-fit: cover;
+										"></div>
+                                <picture>
+                                    <img width="500" height="500" data-main-image=""
+                                        sizes="(min-width: 500px) 500px, 100vw" decoding="async"
+                                        src="./images/me/me.jpeg" alt="Headshot"
+                                        style="object-fit: cover; opacity: 1" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="jobs" class="jobs" data-sr-id="2" style="visibility: visible">
+                <h2 class="numbered-heading">Donde he trabajado</h2>
+                <div class="inner">
+                    <div role="tablist" aria-label="Job tabs" class="btn">
+                        <button id="tab-0" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-0"
+                            class="nss active">
+                            <span>Hostal LoroVerde</span>
+                        </button>
+                        <button id="tab-1" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-0"
+                            class="nss non">
+                            <span>BlockChain Empresarial</span>
+                        </button>
+
+                        <!-- <button id="tab-2" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-0"
+                            class="nss non">
+                            <span>otro</span>
+                        </button>
+                        <button id="tab-3" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-0"
+                            class="nss non">
+                            <span>otro</span>
+                        </button> -->
+                        <div id="barra" class="barrita uno"></div>
+                    </div>
+                    <div class="job">
+                        <div id="panel-0" role="tabpanel" tabindex="0" aria-labelledby="tab-0" aria-hidden="false"
+                            class="jobsss active">
+                            <h3>
+                                <span>Desarrollador Web en</span>
+                                <span class="company">
+                                    <a href="https://loroverdehostal.netlify.app" class="inline-link"
+                                        rel="noopener noreferrer" target="_blank" rel="noreferrer noopener">Loro
+                                        Verde</a></span>
+                            </h3>
+                            <p class="range">Noviembre 2020 - Enero 2021</p>
+                            <div>
+                                <ul>
+                                    <li>Escribi código moderno, eficaz y fácil de mantener.</li>
+                                    <li>
+                                        Construi una interfaz visual muy agradable y sencilla de usar.
+                                    </li>
+                                    <li>
+                                        Trabaje con una variedad de diferentes lenguajes, plataformas, marcos
+                                        y sistemas de administración de contenido como JavaScript, TypeScript
+                                        y Netlify
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="panel-1" role="tabpanel" tabindex="-1" aria-labelledby="tab-1" aria-hidden="true"
+                            class="jobsss mo">
+                            <h3>
+                                <span>Desarrollador Angular en </span><span class="company"><a class="inline-link"
+                                        rel="noopener noreferrer" target="_blank" rel="noreferrer noopener">Blockchain
+                                        Empresarial</a></span>
+                            </h3>
+                            <p class="range">January - April 2018</p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        Aquí yo implemente varios tipos de soluciones basadas en tecnologías
+                                        Front-End para solventar los distintos objetivos planteados.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects" data-sr-id="3" style="visibility: visible">
+                <h2 class="numbered-heading">Algunas cosas que he construido</h2>
+                <!-- <div class="box-projects">
+                    <div class="project im_a_la_izquierda">
+                        <div class="project_content">
+                            <p class="featured">Featured Project</p>
+                            <p class="title">No lo se</p>
+                            <p class="content">:o</p>
+                            <div class="technologies">
+                                <p>react</p>
+                                <p>heroku</p>
+                            </div>
+                        </div>
+                        <div class="project_image">
+                            <a href="">
+                                <img src="https://www.ceupe.com/images/easyblog_articles/1815/b2ap3_large_icono-project-management.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project im_a_la_derecha">
+                        <div class="project_content">
+                            <p class="featured">Featured Project</p>
+                            <p class="title">No lo se</p>
+                            <p class="content">:o</p>
+                            <div class="technologies">
+                                <p>react</p>
+                                <p>heroku</p>
+                            </div>
+                        </div>
+                        <div class="project_image">
+                            <a href="">
+                                <img src="https://www.ceupe.com/images/easyblog_articles/1815/b2ap3_large_icono-project-management.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="blog-slider">
+                    <div class="blog-slider__wrp swiper-wrapper">
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img
+                                    src="https://raw.githubusercontent.com/Bryan-Herrera-DEV/Github-Profile-View-With-Charts/main/src/assets/og.jpg">
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Featured Project</span>
+                                <div class="blog-slider__title">GithubProfile whith Charts</div>
+                                <div class="blog-slider__text">
+                                    Una mejor vista a tu perfil de GitHub. ¡Con gráficos!
+                                </div>
+                                <div class="blog-slider__technologies">
+                                    <p>Angular</p>
+                                    <p>Github API</p>
+                                    <p>ApexCharts</p>
+                                </div>
+                                <a href="https://bryan-herrera-dev.github.io/Github-Profile-View-With-Charts"
+                                    class="blog-slider__button">View Project</a>
+                            </div>
+                        </div>
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="./assets/mapping.png" alt="" />
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Featured Project</span>
+
+                                <div class="blog-slider__title">Angular Maps</div>
+                                <div class="blog-slider__text">
+                                    Encuntra tus lugares favoritos de manera rapida y sencilla.
+                                </div>
+                                <div class="blog-slider__technologies">
+                                    <p>Angular</p>
+                                    <p>MapBox</p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <a href="https://bryan-herrera-dev.github.io/Angular-Maps/"
+                                    class="blog-slider__button">View Project</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                                <img src="https://raw.githubusercontent.com/Bryan-Herrera-DEV/pokemon-wiki/main/src/assets/pokemon-smile-169.jpg"
+                                    alt="" />
+                            </div>
+                            <div class="blog-slider__content">
+                                <span class="blog-slider__code">Featured Project</span>
+
+                                <div class="blog-slider__title">Pokemon List</div>
+                                <div class="blog-slider__text">
+                                    Ve todos tus pokemon favoritos y sus habilidades de forma sencilla y rapida.
+                                </div>
+                                <div class="blog-slider__technologies">
+                                    <p>Angular</p>
+                                    <p>Poke API</p>
+                                </div>
+                                <a href="https://bryan-herrera-dev.github.io/pokemon-wiki/"
+                                    class="blog-slider__button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-slider__pagination"></div>
+                </div>
+            </section>
+
+            <section id="other_projects" class="other_projects" data-sr-id="4" style="visibility: visible">
+                <h2>Otros de mis proyectos</h2>
+                <a style="color: #8892b0;" href="https://github.com/Bryan-Herrera-DEV?tab=repositories" target="_blank"
+                    rel="noreferrer noopener">Mira mis
+                    repositorios</a>
+
+                <ul class="grid">
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/Python-Mp3Mp4-Downloader"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/" target="_blank" rel="noreferrer noopener"
+                                                                                                                                                aria-label="External Link" class="external" target="_blank" rel="noreferrer noopener" rel="noopener noreferrer"><svg
+                                                                                                                                                    xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                                                                                                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                                                                                                                    class="feather feather-external-link">
+                                                                                                                                                    <title>External Link</title>
+                                                                                                                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                                                                                                    </path>
+                                                                                                                                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                                                                                                                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                                                                                                                </svg></a> -->
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/Python-Mp3Mp4-Downloader"
+                                        target="_blank" rel="noreferrer noopener"
+                                        rel="noopener noreferrer">Python-Mp3Mp4-Downloader</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        A small security guide for your linux server.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>Python</li>
+                                    <li>CHOCOLATELY</li>
+                                    <li>FFmpeg</li>
+                                    <li>PyQt5</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/status-for-my-web-pages"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://bryan-herrera-dev.github.io/status-for-my-web-pages/"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/status-for-my-web-pages"
+                                        target="_blank" rel="noreferrer noopener" rel="noopener noreferrer">Status for
+                                        my web pages</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        📈 Uptime monitor and status page for Bryan Herrera ~ ርᚱ1ናተᛰ ᚻህᚥተპᚱ,
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>Uptime</li>
+                                    <li>GithubActions</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/Angular-Password-Generator"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/Angular-Password-Generator"
+                                        target="_blank" rel="noreferrer noopener" rel="noopener noreferrer">Angular
+                                        Password Generator</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        Application to generate secure passwords based on the 'KDF' strategy.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>Angular</li>
+                                    <li>KDF-PaswswordStrategy</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/Como-Crear-un-Perfil-Hermoso-con-README"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/" target="_blank" rel="noreferrer noopener"
+                                            aria-label="External Link" class="external" target="_blank" rel="noreferrer noopener" rel="noopener noreferrer"><svg
+                                                xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg></a> -->
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/Como-Crear-un-Perfil-Hermoso-con-README"
+                                        target="_blank" rel="noreferrer noopener" rel="noopener noreferrer">Crear un
+                                        Perfil Hermoso con README</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        Aqui les dejare unas instrucciones sobre como crear un perfil en github genial
+                                        con README
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>MarkdownLanguage</li>
+                                    <li>README.md</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/webpack-skeleton" target="_blank"
+                                            rel="noreferrer noopener" aria-label="External Link" class="external"
+                                            target="_blank" rel="noreferrer noopener" rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/" target="_blank" rel="noreferrer noopener"
+                                                                aria-label="External Link" class="external" target="_blank" rel="noreferrer noopener" rel="noopener noreferrer"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                                    class="feather feather-external-link">
+                                                                    <title>External Link</title>
+                                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                    </path>
+                                                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                                </svg></a> -->
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/webpack-skeleton" target="_blank"
+                                        rel="noreferrer noopener" rel="noopener noreferrer">Webpack Skeleton</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        This project was created to have a guide on what a basic webpack project would
+                                        look like.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Webpack</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/TradingWithSockets"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/" target="_blank" rel="noreferrer noopener"
+                                                                                    aria-label="External Link" class="external" target="_blank" rel="noreferrer noopener" rel="noopener noreferrer"><svg
+                                                                                        xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                                                        class="feather feather-external-link">
+                                                                                        <title>External Link</title>
+                                                                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                                        </path>
+                                                                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                                                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                                                    </svg></a> -->
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/TradingWithSockets" target="_blank"
+                                        rel="noreferrer noopener" rel="noopener noreferrer">Trading View With
+                                        Sockets</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        View of cryptocurrency charts with sockets.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>Angular</li>
+                                    <li>Socket</li>
+                                    <li>Nodejs</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/My-OhMyPush-Themes"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/" target="_blank" rel="noreferrer noopener"
+                                                                                                        aria-label="External Link" class="external" target="_blank" rel="noreferrer noopener" rel="noopener noreferrer"><svg
+                                                                                                            xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                                                                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                                                                            class="feather feather-external-link">
+                                                                                                            <title>External Link</title>
+                                                                                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                                                            </path>
+                                                                                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                                                                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                                                                        </svg></a> -->
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/My-OhMyPush-Themes" target="_blank"
+                                        rel="noreferrer noopener" rel="noopener noreferrer">My Oh My Posh Themes</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        My themes for the "OhMyPush" engine.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>OhMyPush-Engine</li>
+                                    <li>JSON</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/Guia-de-seguridad-en-servidores"
+                                            target="_blank" rel="noreferrer noopener" aria-label="External Link"
+                                            class="external" target="_blank" rel="noreferrer noopener"
+                                            rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/" target="_blank" rel="noreferrer noopener"
+                                                                                                                            aria-label="External Link" class="external" target="_blank" rel="noreferrer noopener" rel="noopener noreferrer"><svg
+                                                                                                                                xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                                                                                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                                                                                                class="feather feather-external-link">
+                                                                                                                                <title>External Link</title>
+                                                                                                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                                                                                </path>
+                                                                                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                                                                                            </svg></a> -->
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/Guia-de-seguridad-en-servidores"
+                                        target="_blank" rel="noreferrer noopener" rel="noopener noreferrer">Server
+                                        security guide</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        A small security guide for your linux server.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>MarkdownLanguage</li>
+                                    <li>LinuxCommands</li>
+                                </ul>
+                            </div>
+                    </li>
+
+                    <li class="projects__StyledProject-sc-1v1fime-1 dIMCBf">
+                        <div class="project-inner">
+                            <div style="width: 100%;">
+                                <div class="project-top">
+                                    <div class="folder">
+                                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-folder">
+                                            <title>Folder</title>
+                                            <path
+                                                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Bryan-Herrera-DEV/Socket-Chat" target="_blank"
+                                            rel="noreferrer noopener" aria-label="External Link" class="external"
+                                            target="_blank" rel="noreferrer noopener" rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <!-- <a href="https://bryan-herrera-dev.github.io/Angular-Password-Generator/" target="_blank" rel="noreferrer noopener"
+                                                                                                                                                aria-label="External Link" class="external" target="_blank" rel="noreferrer noopener" rel="noopener noreferrer"><svg
+                                                                                                                                                    xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                                                                                                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                                                                                                                    class="feather feather-external-link">
+                                                                                                                                                    <title>External Link</title>
+                                                                                                                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                                                                                                    </path>
+                                                                                                                                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                                                                                                                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                                                                                                                </svg></a> -->
+                                    </div>
+                                </div>
+                                <h3 class="project-title">
+                                    <a href="https://github.com/Bryan-Herrera-DEV/Socket-Chat" target="_blank"
+                                        rel="noreferrer noopener" rel="noopener noreferrer">Socket-Chat</a>
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        Example of a multi-user chat room with socket and expressjs
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="project-tech-list">
+                                    <li>NodeJS</li>
+                                    <li>Express</li>
+                                    <li>Socket</li>
+                                </ul>
+                            </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="codepen" class="contact_boxeeeee" data-sr-id="3" style="visibility: visible">
+
+                <h2 class="title">My work at codepen</h2>
+                <p>
+                    Look at my profile in codepen, in this one I have projects based on web technologies.
+                </p>
+                <a class="email-link" href="https://codepen.io/Bryanlolry" rel="noopener noreferrer" target="_blank">
+                    My profile</a>
+            </section>
+
+            <section id="contact" class="contact_boxeeeee" data-sr-id="3" style="visibility: visible">
+                <h2 class="numbered-heading overline">What’s Next?</h2>
+                <h2 class="title">Get In Touch</h2>
+                <p>Currently I am looking for new opportunities, my inbox is always open. Whether you have a question or
+                    just want to say
+                    hello, I'll do my best to get back to you!</p>
+                <a class="email-link" href="mailto:bryherrera55@gmail.com" rel="noopener noreferrer" target="_blank">Say
+                    Hello</a>
+            </section>
+
+        </main>
+        <footer class="footer__StyledFooter-sc-4jwnt4-0 earxGk">
+            <div class="footer__StyledSocialLinks-sc-4jwnt4-1 iKeBGp">
+                <ul>
+                    <li><a href="https://github.com/bchiang7" aria-label="GitHub" rel="noopener noreferrer"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg></a></li>
+                    <li><a href="https://www.instagram.com/bchiang7" aria-label="Instagram" rel="noopener noreferrer"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-instagram">
+                                <title>Instagram</title>
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a></li>
+                    <li><a href="https://twitter.com/bchiang7" aria-label="Twitter" rel="noopener noreferrer"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-twitter">
+                                <title>Twitter</title>
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                </path>
+                            </svg></a></li>
+                    <li><a href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin" rel="noopener noreferrer"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-linkedin">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a></li>
+                    <li><a href="https://codepen.io/bchiang7" aria-label="Codepen" rel="noopener noreferrer"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-codepen">
+                                <title>CodePen</title>
+                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                                <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                                <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                                <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                                <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="footer__StyledCredit-sc-4jwnt4-2 fLSMpu"><a href="https://github.com/bchiang7/v4"
+                    rel="noopener noreferrer" target="_blank">
+                    <div>Designed &amp; Built by Bryan Herrera</div>
+
+                </a></div>
+        </footer>
+    </div>
+    <!-- <script src="./assets/js/app.js"></script> -->
+    <!-- <section id="root"></section> -->
+</body>
+
+</html>
