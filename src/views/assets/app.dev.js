@@ -258,3 +258,15 @@ but_nav___.addEventListener('click', function () {
   aside_a.classList.toggle('dSbVSd');
   boudy.classList.toggle('blur');
 });
+var pop_up_sobremi_cerrar = document.querySelector('.pop_up_sobremi_cerrar');
+var pop_up_sobremi = document.querySelector('.pop_up_sobremi');
+pop_up_sobremi_cerrar.addEventListener('click', function () {
+  document.querySelector('.price-section').classList.toggle('scale-out-bottom');
+  setTimeout(function () {
+    pop_up_sobremi.classList.toggle('scale-out-horizontal');
+  }, 200);
+  setTimeout(function () {
+    pop_up_sobremi.classList.toggle('active');
+  }, 710);
+  boudy.classList.toggle('blur');
+});

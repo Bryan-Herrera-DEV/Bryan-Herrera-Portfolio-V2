@@ -1,15 +1,15 @@
 {
   "name": "api_documentation",
   "version": "1.0.0",
-  "description": "",
+  "description": "About My personal portfolio to teach a little of what I know: 3",
   "main": "index.js",
   "scripts": {
-    "develop": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bryan Herrera Dev",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",

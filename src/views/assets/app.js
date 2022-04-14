@@ -257,3 +257,19 @@ but_nav___.addEventListener('click', () => {
 
     boudy.classList.toggle('blur');
 })
+
+let pop_up_sobremi_cerrar = document.querySelector('.pop_up_sobremi_cerrar');
+let pop_up_sobremi = document.querySelector('.pop_up_sobremi');
+
+pop_up_sobremi_cerrar.addEventListener('click', () => {
+    document.querySelector('.price-section').classList.toggle('scale-out-bottom');
+
+    setTimeout(() => {
+        pop_up_sobremi.classList.toggle('scale-out-horizontal');
+    }, 200);
+    setTimeout(() => {
+        pop_up_sobremi.classList.toggle('active');
+    }, 710);
+
+    boudy.classList.toggle('blur');
+})
