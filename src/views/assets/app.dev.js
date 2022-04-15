@@ -11,7 +11,6 @@ require('./style.min.css');
 
 /* Animaciones entrada */
 var lista = gsap.utils.toArray(".yy");
-console.log(lista[0]);
 
 for (var index = 0; index < lista.length; index++) {
   var delay = 0.3 + index / 9;
@@ -66,8 +65,6 @@ window.onscroll = function () {
     this.scrollPs = pUno;
     nav.setAttribute('style', 'transform: translateY(-150%);');
   }
-
-  console.log("Vertical: " + scrollPs);
 }; // rellaxjs
 
 /*
@@ -267,6 +264,26 @@ pop_up_sobremi_cerrar.addEventListener('click', function () {
   }, 200);
   setTimeout(function () {
     pop_up_sobremi.classList.toggle('active');
-  }, 710);
-  boudy.classList.toggle('blur');
+  }, 710); // boudy.classList.toggle('blur');
+}); // cargar repos
+
+var fetch_url = 'https://api.github.com/users/Bryan-Herrera-Dev/repos?per_page=100';
+var project_sec = document.querySelector('#project_sec_ul');
+
+window.onload = function () {
+  fetch(fetch_url).then(function (res) {
+    return res.json();
+  }).then(function (data) {
+    data.forEach(function (repo) {
+      project_sec.innerHTML += "\n            \n                <li class=\"projects__StyledProject-sc-1v1fime-1 dIMCBf\">\n                        <div class=\"project-inner\">\n                            <div style=\"width: 100%;\">\n                                <div class=\"project-top\">\n                                    <div class=\"folder\">\n                                        <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 24 24\"\n                                            fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\"\n                                            stroke-linejoin=\"round\" class=\"feather feather-folder\">\n                                            <title>Folder</title>\n                                            <path\n                                                d=\"M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z\">\n                                            </path>\n                                        </svg>\n                                    </div>\n                                    <div class=\"project-links\">\n                                        <a href=\"".concat(repo.html_url, "\"\n                                            target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"External Link\"\n                                            class=\"external\">\n                                            <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 24 24\"\n                                                fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\n                                                stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                                                class=\"feather feather-github\">\n                                                <title>GitHub</title>\n                                                <path\n                                                    d=\"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22\">\n                                                </path>\n                                            </svg>\n                                        </a>\n                                        <a href=\"").concat(repo.homepage, "\"\n                                            style=\"display: ").concat(repo.homepage ? "block" : "none", ";\"\n                                            target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"External Link\"\n                                            class=\"external\"><svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"\n                                                viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\n                                                stroke-linecap=\"round\" stroke-linejoin=\"round\"\n                                                class=\"feather feather-external-link\">\n                                                <title>External Link</title>\n                                                <path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\">\n                                                </path>\n                                                <polyline points=\"15 3 21 3 21 9\"></polyline>\n                                                <line x1=\"10\" y1=\"14\" x2=\"21\" y2=\"3\"></line>\n                                            </svg></a>\n                                    </div>\n                                </div>\n                                <h3 class=\"project-title\">\n                                    <a href=\"").concat(repo.html_url, "\" aria-label=\"External Link\"\n                                        target=\"_blank\" rel=\"noreferrer noopener\">").concat(repo.name, "</a>\n                                </h3>\n                                <div class=\"project-description\">\n                                    <p>\n                                        ").concat(repo.description ? repo.description : 'Sin descripción', "\n                                    </p>\n                                </div>\n                            </div>\n                    </li>\n            \n            ");
+    });
+  });
+}; // vieww more projects
+
+
+var view_more = document.querySelector('.view_more');
+view_more.addEventListener('click', function () {
+  view_more.style = "display: none;";
+  document.querySelector('.cover_projects').classList.toggle('desactive');
+  project_sec.classList.toggle('oculto');
 });
